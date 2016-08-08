@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+<style type="text/css" media="screen">
+
+	#timing:hover .transform-box{
+		/* transform: rotate(1000deg); */
+		/* transform: translateX(200px);
+ */		
+		transform: scale(10,1) translateX(300px);
+ 		/* margin-left: 520px; */
+		transform: skew(1800deg);
+		border-radius: 50%;
+		
+
+
+	}
+	.transform-box {
+		font-size: 12px;
+		width: 60px;
+		height: 60px;
+		background-color: #ddd;
+		border: 1px #f00 solid;
+	}
+
+
+	.ease {
+		transition: all 4s ease-in;
+	}
+
+	.ease-out {
+		transition: all 4s ease-out;
+	}
+
+	.ease-in-out {
+		transition: all 4s ease-in-out;
+
+	}
+	.linear {
+		transition: all 4s linear;
+	}
+
+	.custom {
+		transition: all 4s cubic-bezier(1.000, 0.835, 0.000, 0.935);
+	}
+
+	.huh {
+		transition: all 4s cubic-bezier(1.000, -0.530, .405, 1.425);
+	}
+</style>
+</head>
+<body>
+<div id="timing">
+	<div class="ease transform-box">Easy Does it</div>
+	<div class="ease-out transform-box">Ease Out</div>
+	<div class="ease-in-out transform-box">Ease Both</div>
+	<div class="linear transform-box">Linear</div>
+	<div class="custom transform-box">Custom BC</div>
+	<div class="huh transform-box">Huh?</div>
+</div>
+	
+</body>
+</html>
